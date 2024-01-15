@@ -31,6 +31,20 @@ export default function useMenu() {
     }
   });
 
-  headerNav.addEventListener('click', clouseMenu);
+  headerNav.addEventListener('click', (event) => {
+    if (event.target.classList.contains('nav__link')) {
+      gsap.to(event.target, {
+        duration: 0.5,
+        scale: 2.5,
+        opacity: 0,
+        ease: 'power1.inOut',
+        onComplete: () => {
+          gsap.to(event.target, { duration: 0, scale: 1, opacity: 1 });
+        },
+      });
+
+      clouseMenu();
+    }
+  });
   logo.addEventListener('click', clouseMenu);
 }
