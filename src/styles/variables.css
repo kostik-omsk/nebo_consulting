@@ -1,13 +1,13 @@
 :root {
   --main-background: #eff5f9;
-  --main-filling: #acbfe7;
+  --main-filling: #d3dbee;
   --main-text: #66727f;
   --main-primary: #0b1f33;
-  --main-secondary: #0d4cd3;
+  --main-secondary: #1a6bc8;
   --main-white: #fffcf2ff;
   --main-danger: #cc334a;
-  --main-gradient: linear-gradient(180deg, #1f50e8 20.95%, #7996f0 134.42%);
-  --main-gradient-90: linear-gradient(90deg, #1f50e8 20.95%, #7996f0 134.42%);
+  --main-gradient: linear-gradient(180deg, #1a6bc8 20.95%, #479df8 134.42%);
+  --main-gradient-90: linear-gradient(90deg, #1a6bc8 20.95%, #7996f0 134.42%);
 
   --index: calc(1vw + 1vh);
 
