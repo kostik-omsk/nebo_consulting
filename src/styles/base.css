@@ -1,6 +1,15 @@
-body {
-  font-size: 16px;
-  height: 2200px;
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('../assets/fonts/PTSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../assets/fonts/PTSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SaarSPDemo';
+  src: url('../assets/fonts/SaarSPDemo.otf') format('opentype');
 }
 
 * {
@@ -28,6 +37,13 @@ body {
   background-color: #7996f0;
 }
 
+body {
+  min-height: 100vh;
+  min-width: 320px;
+  font-family: 'PTSans-Regular', 'PTSans', sans-serif;
+  font-size: 16px;
+}
+
 .content-grid {
   --padding-inlain: clamp(0.6rem, 3%, 1rem);
   --content-max-width: 1390px;
@@ -47,11 +63,11 @@ body {
   grid-column: content;
 }
 
-.content-grid > .full-width {
+.content-grid .full-width {
   grid-column: full-width;
   padding: var(--padding-inlain);
-  /* display: grid;
-  grid-template-columns: inherit; */
+  display: grid;
+  grid-template-columns: inherit;
 }
 
 .no-scroll {
