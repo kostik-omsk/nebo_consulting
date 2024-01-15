@@ -3,7 +3,6 @@ import { gsap } from 'gsap-trial';
 export default function useMenu() {
   const menuToggle = document.getElementById('menuToggle');
   const headerNav = document.querySelector('.header__nav');
-  const logo = document.querySelector('.logo__link');
 
   const tl = gsap.timeline();
 
@@ -46,5 +45,4 @@ export default function useMenu() {
       clouseMenu();
     }
   });
-  logo.addEventListener('click', clouseMenu);
 }

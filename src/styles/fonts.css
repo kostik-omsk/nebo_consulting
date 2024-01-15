@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('../assets/fonts/PTSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../assets/fonts/PTSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SaarSPDemo';
+  src: url('../assets/fonts/SaarSPDemo.otf') format('opentype');
+}
+
+:root {
+  --font-family-regular: 'PTSans-Regular';
+  --font-family-bold: 'PTSans-Bold';
+  --font-family-saas: 'SaarSPDemo';
+}

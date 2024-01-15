@@ -1,9 +1,11 @@
-.header {
+.header__navbar {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
+  width: 100%;
+  padding: 1rem;
 }
 
 .phone-link {
@@ -12,51 +14,20 @@
   align-items: center;
   gap: 0.3rem;
   color: var(--main-primary);
-  font-weight: 600;
+  font-family: 'PTSans-Bold';
   text-decoration: none;
   transition: all 0.4s;
   z-index: 10;
 }
 
 .phone-link:hover {
-  color: var(--main-secondary);
+  color: var(--main-danger);
 }
 
 @media only screen and (max-width: 576px) {
   .phone-link {
     font-size: var(--font-size-sm);
   }
-}
-
-.header__logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 15;
-}
-
-@media only screen and (max-width: 576px) {
-  .header__logo {
-    position: static;
-    transform: translate(0%, 0%);
-  }
-}
-
-.logo__link {
-  display: flex;
-  justify-content: center;
-  font-family: 'SaarSPDemo';
-  text-decoration: none;
-  font-size: var(--font-size-xxl);
-  letter-spacing: 0.2rem;
-}
-
-.logo__text {
-  background-image: var(--main-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 .header__menu-btn {
@@ -66,7 +37,7 @@
 }
 
 .header__menu-btn:hover * {
-  stroke: var(--main-secondary);
+  stroke: var(--main-danger);
 }
 
 .header__menu-btn-checkbox {
@@ -170,4 +141,74 @@
 .nav__link:hover {
   color: var(--main-secondary);
   transform: scale(1);
+}
+
+.header__hero {
+  margin-top: -70px;
+  height: 782px;
+  width: 100%;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+  perspective: 1000px;
+  background: black;
+}
+
+.hero__layers {
+  transform-style: preserve-3d;
+  height: 100%;
+  transform: rotateX(var(--mouse-y)) rotateY(var(--mouse-x));
+  transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+  will-change: transform;
+}
+
+.layers__item {
+  position: absolute;
+  inset: -3vw;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.layers__content {
+  text-align: center;
+}
+
+.layers__title {
+  color: var(--main-primary);
+  font-family: 'SaarSPDemo';
+  font-size: var(--font-size-xxxl);
+  letter-spacing: 0.3rem;
+  font-weight: 800;
+}
+.layers__title span {
+  display: block;
+}
+.layers__subtitle {
+  font-style: italic;
+  font-size: var(--font-size-sm);
+}
+
+.layer-1 {
+  transform: translateZ(-50px) scale(1.08);
+}
+.layer-2 {
+  transform: translateZ(100px) scale(1.1);
+}
+.layer-3 {
+  pointer-events: none;
+  transform: translateZ(220px);
+}
+.layer-4 {
+  transform: translateZ(240px) scale(0.8);
+}
+.layer-5 {
+  transform: translateZ(300px) scale(0.8);
+}
+.layer-6 {
+  transform: translateZ(380px) scale(0.7);
+}
+.layer-7 {
+  transform: translateZ(440px) scale(0.55);
 }
