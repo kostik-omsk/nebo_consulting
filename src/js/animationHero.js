@@ -7,29 +7,37 @@ export default function animationHero() {
   hero.style.setProperty('--mouse-y', `0deg`);
 
   gsap.from('.layer-3', {
-    y: 120,
-    opacity: 0.1,
+    y: 150,
+    delay: 0.2,
     duration: 1.5,
   });
+
   gsap.from('.layer-4', {
-    x: 120,
-    opacity: 0.2,
-    duration: 1,
-  });
-  gsap.from('.layer-5', {
-    x: -120,
-    opacity: 0.2,
-    duration: 1.6,
-  });
-  gsap.from('.layer-6', {
-    x: 180,
-    opacity: 0.2,
+    y: 220,
+    opacity: 0,
+    delay: 2,
     duration: 2,
+    ease: 'power2.out',
   });
+
+  gsap.from('.layer-5', {
+    y: 150,
+    delay: 0.7,
+    duration: 1.5,
+  });
+
+  gsap.from('.layer-6', {
+    y: 150,
+    delay: 1.3,
+    duration: 1.5,
+  });
+
   gsap.from('.layer-7', {
-    x: -150,
-    opacity: 0.2,
-    duration: 1.8,
+    scale: 0.2,
+    opacity: 0,
+    delay: 1,
+    duration: 3,
+    ease: 'power1.out',
   });
 
   hero.addEventListener('mousemove', (event) => {
