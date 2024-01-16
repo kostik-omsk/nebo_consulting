@@ -6,39 +6,55 @@ export default function animationHero() {
   hero.style.setProperty('--mouse-x', `0deg`);
   hero.style.setProperty('--mouse-y', `0deg`);
 
-  gsap.from('.layer-3', {
-    y: 150,
-    delay: 0.2,
-    duration: 1.5,
-  });
+  const tl = gsap.timeline({ ease: 'power2.out' });
 
-  gsap.from('.layer-4', {
-    y: 220,
+  tl.from('.layer-3', {
+    y: 150,
     opacity: 0,
-    delay: 2,
-    duration: 2,
-    ease: 'power2.out',
+    duration: 1.6,
   });
 
-  gsap.from('.layer-5', {
-    y: 150,
-    delay: 0.7,
-    duration: 1.5,
-  });
+  tl.from(
+    '.layer-5',
+    {
+      y: 150,
+      opacity: 0,
+      duration: 1.5,
+    },
+    '<40%',
+  );
 
-  gsap.from('.layer-6', {
-    y: 150,
-    delay: 1.3,
-    duration: 1.5,
-  });
+  tl.from(
+    '.layer-6',
+    {
+      y: 150,
+      opacity: 0,
+      duration: 1.5,
+    },
+    '<40%',
+  );
 
-  gsap.from('.layer-7', {
-    scale: 0.2,
-    opacity: 0,
-    delay: 1,
-    duration: 3,
-    ease: 'power1.out',
-  });
+  tl.from(
+    '.layer-4',
+    {
+      y: 220,
+      opacity: 0,
+      duration: 2,
+      ease: 'power2.out',
+    },
+    '<40%',
+  );
+
+  tl.from(
+    '.layer-7',
+    {
+      scale: 0.2,
+      opacity: 0,
+      duration: 3,
+      ease: 'power1.out',
+    },
+    '<',
+  );
 
   hero.addEventListener('mousemove', (event) => {
     const elementRect = hero.getBoundingClientRect();
