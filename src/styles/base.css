@@ -20,7 +20,7 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #7996f0;
+  background-color: #3683ff;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   font-family: 'PTSans-Regular', 'PTSans', sans-serif;
   font-size: 16px;
   color: var(--main-primary);
-  background-color: #2b2b2b;
+  /* background-color: #dddcdc; */
 }
 
 .content-grid {
