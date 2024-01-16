@@ -202,7 +202,7 @@
 }
 
 .layer-1 {
-  transform: translateZ(-50px) scale(1.08);
+  transform: translateZ(-50px) scale(1.2);
 }
 .layer-2 {
   transform: translateZ(50px) scale(1);

@@ -62,8 +62,8 @@ export default function animationHero() {
     const elementCenterX = elementRect.left + elementRect.width / 2;
     const elementCenterY = elementRect.top + elementRect.height / 2;
 
-    const targetX = (event.clientX - elementCenterX) * -0.005;
-    const targetY = (event.clientY - elementCenterY) * 0.01;
+    const targetX = (event.clientX - elementCenterX) * -0.01;
+    const targetY = (event.clientY - elementCenterY) * 0.02;
 
     hero.style.setProperty('--mouse-x', `${targetX}deg`);
     hero.style.setProperty('--mouse-y', `${targetY}deg`);
