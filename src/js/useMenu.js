@@ -8,7 +8,6 @@ export default function useMenu() {
 
   function openMenu() {
     headerNav.classList.add('menu-opened');
-    document.body.classList.add('no-scroll');
     tl.from('.nav__item', {
       opacity: 0,
       y: -20,
@@ -19,7 +18,6 @@ export default function useMenu() {
   function clouseMenu() {
     menuToggle.checked = false;
     headerNav.classList.remove('menu-opened');
-    document.body.classList.remove('no-scroll');
   }
 
   menuToggle.addEventListener('change', () => {
