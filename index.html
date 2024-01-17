@@ -9,49 +9,86 @@
   <body>
     <div class="content-grid">
       <header class="header">
-        <div class="header__phone">
-          <a class="phone-link" href="tel:+79999999999">
-            <span>+7 999 999 99 99</span>
-          </a>
+        <div class="header__navbar">
+          <div class="header__phone">
+            <a class="phone-link" href="tel:+79999999999">
+              +7(999)-999-99-99
+            </a>
+          </div>
+          <input
+            type="checkbox"
+            id="menuToggle"
+            class="header__menu-btn-checkbox"
+          />
+          <label for="menuToggle" class="header__menu-btn">
+            <svg viewBox="0 0 32 32">
+              <path
+                class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+              ></path>
+              <path class="line" d="M7 16 27 16"></path>
+            </svg>
+          </label>
         </div>
-        <div class="header__logo">
-          <a href="#" class="logo__link">
-            <span class="logo__text">НЕБО</span>
-          </a>
-        </div>
-        <input
-          type="checkbox"
-          id="menuToggle"
-          class="header__menu-btn-checkbox"
-        />
-        <label for="menuToggle" class="header__menu-btn">
-          <svg viewBox="0 0 32 32">
-            <path
-              class="line line-top-bottom"
-              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-            ></path>
-            <path class="line" d="M7 16 27 16"></path>
-          </svg>
-        </label>
+        <section class="header__hero">
+          <div class="hero__layers">
+            <div
+              class="layers__item layer-1"
+              style="background-image: url('./src/assets/images/layer-1.jpg')"
+            ></div>
+            <div
+              class="layers__item layer-2"
+              style="background-image: url('./src/assets/images/layer-2.png')"
+            ></div>
+            <div
+              class="layers__item layer-3"
+              style="background-image: url('./src/assets/images/layer-3.png')"
+            ></div>
+            <div class="layers__item layer-4">
+              <div class="layers__content">
+                <h1 class="layers__title">
+                  КОНСАЛТИНГОВЫЙ ЦЕНТР <span>&ldquo;НЕБО&rdquo;</span>
+                </h1>
+                <div class="layers__subtitle">
+                  Экспертная помощь для вас и вашего бизнеса
+                </div>
+              </div>
+            </div>
+            <div
+              class="layers__item layer-5"
+              style="background-image: url('./src/assets/images/layer-5.png')"
+            ></div>
+            <div
+              class="layers__item layer-6"
+              style="background-image: url('./src/assets/images/layer-6.png')"
+            ></div>
+            <div
+              class="layers__item layer-7"
+              style="background-image: url('./src/assets/images/layer-7.png')"
+            ></div>
+          </div>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="services" id="services"></section>
+      </main>
       <footer class="footer"></footer>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Услуги</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">О компании</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
