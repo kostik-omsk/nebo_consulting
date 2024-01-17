@@ -11,7 +11,7 @@ export default function animationHero() {
   tl.from('.layer-3', {
     y: 150,
     opacity: 0,
-    duration: 1.6,
+    duration: 1.3,
   });
 
   tl.from(
@@ -19,9 +19,9 @@ export default function animationHero() {
     {
       y: 150,
       opacity: 0,
-      duration: 1.5,
+      duration: 1.3,
     },
-    '<40%',
+    '<50%',
   );
 
   tl.from(
@@ -29,9 +29,9 @@ export default function animationHero() {
     {
       y: 150,
       opacity: 0,
-      duration: 1.5,
+      duration: 1.3,
     },
-    '<40%',
+    '<50%',
   );
 
   tl.from(
@@ -39,10 +39,9 @@ export default function animationHero() {
     {
       y: 220,
       opacity: 0,
-      duration: 2,
-      ease: 'power2.out',
+      duration: 1.8,
     },
-    '<40%',
+    '<50%',
   );
 
   tl.from(
@@ -51,7 +50,6 @@ export default function animationHero() {
       scale: 0.2,
       opacity: 0,
       duration: 3,
-      ease: 'power1.out',
     },
     '<',
   );
@@ -62,8 +60,8 @@ export default function animationHero() {
     const elementCenterX = elementRect.left + elementRect.width / 2;
     const elementCenterY = elementRect.top + elementRect.height / 2;
 
-    const targetX = (event.clientX - elementCenterX) * -0.01;
-    const targetY = (event.clientY - elementCenterY) * 0.02;
+    const targetX = (event.clientX - elementCenterX) * -0.008;
+    const targetY = (event.clientY - elementCenterY) * 0.016;
 
     hero.style.setProperty('--mouse-x', `${targetX}deg`);
     hero.style.setProperty('--mouse-y', `${targetY}deg`);

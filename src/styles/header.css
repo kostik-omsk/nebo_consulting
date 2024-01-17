@@ -171,18 +171,23 @@
 }
 
 .layers__title {
-  color: var(--main-primary);
+  /* color: var(--main-primary); */
   font-family: 'SaarSPDemo';
   font-size: var(--font-size-xxxl);
   letter-spacing: 0.3rem;
   font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--main-primary);
 }
 .layers__title span {
   display: block;
+  color: var(--main-secondary);
+  -webkit-text-stroke: 0;
 }
 .layers__subtitle {
   font-style: italic;
   font-size: var(--font-size-sm);
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 576px) {
@@ -222,5 +227,5 @@
   transform: translateZ(250px) scale(0.8);
 }
 .layer-7 {
-  transform: translateZ(350px) scale(0.7);
+  transform: translateZ(350px) scale(0.65);
 }
