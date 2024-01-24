@@ -1,19 +1,18 @@
 @font-face {
-  font-family: 'PTSans-Regular';
-  src: url('../assets/fonts/PTSans-Regular.ttf') format('truetype');
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'PTSans-Bold';
-  src: url('../assets/fonts/PTSans-Bold.ttf') format('truetype');
+  font-family: 'Roboto-Medium';
+  src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: 'SaarSPDemo';
-  src: url('../assets/fonts/SaarSPDemo.otf') format('opentype');
+  font-family: 'Roboto-Bold';
+  src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
 }
 
 :root {
-  --font-family-regular: 'PTSans-Regular';
-  --font-family-bold: 'PTSans-Bold';
-  --font-family-saas: 'SaarSPDemo';
+  --font-family-regular: 'Roboto-Regular';
+  --font-family-medium: 'Roboto-Medium';
+  --font-family-bold: 'Roboto-Bold';
 }

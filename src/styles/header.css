@@ -20,7 +20,7 @@
   align-items: center;
   gap: 0.3rem;
   color: var(--main-white);
-  font-family: 'PTSans-Bold';
+
   text-decoration: none;
   transition: all 0.4s;
   z-index: 10;
@@ -142,10 +142,13 @@
   margin-top: -70px;
   height: 782px;
   width: 100%;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 2rem 2rem;
   overflow: hidden;
   perspective: 1000px;
-  background: black;
+  /* box-shadow: 0 0 1.5rem 0.1rem rgba(0, 0, 0, 0.3); */
+  box-shadow:
+    0px 5px 25px #b3baca,
+    -5px 0px 25px #f3fcff;
 }
 
 .hero__layers {
@@ -171,23 +174,14 @@
 }
 
 .layers__title {
-  /* color: var(--main-primary); */
-  font-family: 'SaarSPDemo';
-  font-size: var(--font-size-xxxl);
-  letter-spacing: 0.3rem;
-  font-weight: 800;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--main-primary);
+  font-family: var(--font-family-bold);
+  color: var(--main-primary);
+  font-size: var(--font-size-xl);
 }
 .layers__title span {
   display: block;
   color: var(--main-secondary);
   -webkit-text-stroke: 0;
-}
-.layers__subtitle {
-  font-style: italic;
-  font-size: var(--font-size-sm);
-  font-weight: 600;
 }
 
 @media only screen and (max-width: 576px) {

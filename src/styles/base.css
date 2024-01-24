@@ -27,11 +27,24 @@ body {
   min-height: 200vh;
   min-width: 320px;
   font-family: 'PTSans-Regular', 'PTSans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--main-primary);
-  /* background-color: #dddcdc; */
+  background-color: var(--main-background);
 }
 
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-medium);
+}
+
+h2 {
+  font-size: var(--font-size-xxl);
+}
+h3 {
+  font-size: var(--font-size-md);
+}
 .content-grid {
   --padding-inlain: clamp(0.6rem, 3%, 1rem);
   --content-max-width: 1390px;
@@ -56,6 +69,10 @@ body {
   padding: var(--padding-inlain);
   display: grid;
   grid-template-columns: inherit;
+}
+
+.main section {
+  margin: 6rem 0;
 }
 
 .no-scroll {
