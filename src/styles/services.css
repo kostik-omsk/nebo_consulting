@@ -1,6 +1,9 @@
+.services {
+}
 .services__header {
   margin-bottom: 3rem;
 }
+
 .services__pretitle {
   color: var(--main-secondary);
 }
@@ -52,6 +55,7 @@
 .service__text {
   color: var(--main-text);
   margin-bottom: 1rem;
+  font-size: var(--font-size-sm);
 }
 
 .service__link {
