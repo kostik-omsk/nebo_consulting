@@ -27,7 +27,7 @@ body {
   min-height: 200vh;
   min-width: 320px;
   font-family: 'PTSans-Regular', 'PTSans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--main-primary);
   background-color: var(--main-background);
 }
@@ -72,7 +72,7 @@ h3 {
 }
 
 .main section {
-  margin: 5rem 0;
+  margin: 6rem 0;
 }
 
 .no-scroll {
