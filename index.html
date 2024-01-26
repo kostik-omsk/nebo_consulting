@@ -32,12 +32,7 @@
         </div>
         <section class="header__hero">
           <div class="hero__layers">
-            <div
-              class="layers__item layer-1"
-              style="
-                background-image: url('./src/assets/images/layers/layer-1.jpg');
-              "
-            ></div>
+            <div class="layers__item layer-1"></div>
             <div
               class="layers__item layer-2"
               style="
@@ -77,27 +72,29 @@
             ></div>
           </div>
           <nav class="header__nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a href="#services" class="nav__link">Услуги</a>
-              </li>
-              <li class="nav__item">
-                <a href="#about" class="nav__link">О компании</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contacts" class="nav__link">Контакты</a>
-              </li>
-            </ul>
+            <div class="nav__wrap">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#services" class="nav__link">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </section>
       </header>
       <main class="main">
         <section class="services" id="services">
           <div class="services__header section-header">
-            <span class="services__pretitle">мы предлагаем</span>
+            <span class="services__pretitle pretitle">мы предлагаем</span>
             <h2 class="services__title">Следующие услуги</h2>
           </div>
           <div class="services__content">
@@ -230,13 +227,14 @@
         </section>
         <section class="about" id="about">
           <div class="about__header section-header">
-            <h2 class="about__title">НЕСКОЛЬКО СЛОВ О КОМПАНИИ</h2>
+            <span class="about__pretitle pretitle">несколько слов</span>
+            <h2 class="about__title">О КОМПАНИИ</h2>
           </div>
           <div class="about__content">
             <div class="about__info">
               <div class="about__item">
                 <h4 class="about__heading">Профессионализм и опыт</h4>
-                <p class="about__text" class="about__text">
+                <p class="about__text">
                   Наша компания обладает значительным опытом в области
                   регистрации и сопровождения бизнеса, что позволяет нам
                   предоставлять высококачественные услуги нашим клиентам
@@ -277,39 +275,38 @@
         </section>
         <section class="contacts" id="contacts">
           <div class="contacts__header section-header">
-            <h2>Контакты</h2>
+            <span class="contacts__pretitle pretitle">Наши</span>
+            <h2 class="contacts__title">Контакты</h2>
           </div>
           <div class="contacts__content">
             <div class="contacts__map">
               <script
-                type="text/javascript"
-                charset="utf-8"
                 async
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A400afdaf9aa20b2948e20a2d74a8a5deae9d534250c44ae150715c87143c3cb5&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
               ></script>
             </div>
             <div class="contacts__info">
               <div class="contacts__item">
-                <span class="contacts__pretitle">Позвоните нам:</span>
+                <span class="contacts__heading">Позвоните нам:</span>
                 <a class="contacts__link" href="tel:+79015511196">
                   +7 (901)-551-11-96
                 </a>
               </div>
               <div class="contacts__item">
-                <span class="contacts__pretitle">Напишите нам:</span>
+                <span class="contacts__heading">Напишите нам:</span>
                 <a class="contacts__link" href="mailto:nalinfo@yandex.ru"
                   >nalinfo@yandex.ru</a
                 >
               </div>
               <div class="contacts__item">
-                <span class="contacts__pretitle">Мы находимся:</span>
+                <span class="contacts__heading">Мы находимся:</span>
                 <span class="contacts__text"
                   >МО, г. Подольск, мкр-н Кузнечики, ул. Академика Доллежаля,
                   дом 7, корп.1, офис 29</span
                 >
               </div>
               <div class="contacts__item">
-                <span class="contacts__pretitle">Режим работы:</span>
+                <span class="contacts__heading">Режим работы:</span>
                 <span class="contacts__text"
                   >С 10:00 до 20:00 без выходных</span
                 >

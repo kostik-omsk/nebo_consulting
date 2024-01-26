@@ -18,9 +18,7 @@
   flex: 0 0 50%;
   overflow: hidden;
   border-radius: 1rem;
-  box-shadow:
-    0px 5px 25px #b3baca,
-    -5px 0px 25px #f3fcff;
+  box-shadow: var(--main-box-shadow);
 }
 
 .contacts__item {
@@ -31,17 +29,17 @@
   display: block;
 }
 
-.contacts__pretitle,
+.contacts__heading,
 .contacts__link {
   font-family: var(--font-family-medium);
 }
 
-.contacts__pretitle {
+.contacts__heading {
   margin-bottom: 0.5rem;
 }
 .contacts__link {
   font-size: var(--font-size-xl);
-  color: var(--main-secondary);
+  color: var(--main-primary);
 }
 
 .contacts__text {

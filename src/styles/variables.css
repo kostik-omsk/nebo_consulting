@@ -1,19 +1,30 @@
 :root {
+  /* color */
   --main-background: #d9deeb85;
   --main-text: #6f7780;
-  --main-primary: #0b1f33;
+  --main-text-dark: #1a3653;
+  --main-primary: #21b1fe;
   --main-secondary: #21b1fe;
   --main-white: #e4eeff;
   --main-danger: #ae1e23;
+  /* gradient */
   --main-gradient: linear-gradient(180deg, #21b1fe 30.95%, #22a9fa 100.42%);
   --main-gradient-grid: linear-gradient(
     90deg,
     rgba(33, 177, 254, 0.1) 0%,
     rgba(255, 255, 255, 0.1) 33%
   );
+  /* bg */
+  --main-bg-image: linear-gradient(
+      rgba(240, 245, 252, 0.93),
+      rgba(223, 245, 255, 0.93)
+    ),
+    url('../assets/images/resurs.webp');
+  --main-bg-size: auto, 350px auto;
+  /* shadow */
+  --main-box-shadow: 0px 5px 25px #b3baca, -5px 0px 25px #f3fcff;
 
-  --index: calc(1vw + 1vh);
-
+  /* font-size */
   --font-size-sm: clamp(0.83rem, 0.44vw + 0.72rem, 1rem);
   --font-size-base: clamp(1rem, 0.53vw + 0.87rem, 1.2rem);
   --font-size-md: clamp(1.2rem, 0.64vw + 1.04rem, 1.44rem);
@@ -21,4 +32,6 @@
   --font-size-xl: clamp(1.73rem, 0.92vw + 1.5rem, 2.07rem);
   --font-size-xxl: clamp(2.07rem, 1.11vw + 1.8rem, 2.49rem);
   --font-size-xxxl: clamp(2.49rem, 1.33vw + 2.16rem, 2.99rem);
+
+  --index: calc(1vw + 1vh);
 }
