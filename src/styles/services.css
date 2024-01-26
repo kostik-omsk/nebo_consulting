@@ -1,11 +1,5 @@
-.services {
-}
 .services__header {
   margin-bottom: 3rem;
-}
-
-.services__pretitle {
-  color: var(--main-secondary);
 }
 
 .services__list {
@@ -65,7 +59,7 @@
 }
 
 .service__link {
-  color: var(--main-secondary);
+  color: var(--main-primary);
 }
 
 .service__img {

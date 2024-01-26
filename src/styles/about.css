@@ -62,7 +62,7 @@
 
 .about__item {
   padding: 0.8rem 0.5rem 0.5rem 0.8rem;
-  border-left: 2px solid var(--main-secondary);
+  border-left: 2px solid var(--main-primary);
   background-image: var(--main-gradient-grid);
 }
 

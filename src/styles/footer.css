@@ -61,7 +61,7 @@
   padding: 0.8rem 1.1rem;
   background: #21b1fe3a;
   text-align: center;
-  border: 1px solid var(--main-secondary);
+  border: 1px solid var(--main-primary);
   border-radius: 0.6rem;
   font-weight: 600;
   transition: all 0.3s;
