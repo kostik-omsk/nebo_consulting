@@ -1,6 +1,5 @@
 .about {
   overflow: hidden;
-  /* background: var(--main-white); */
   background-image: linear-gradient(
       rgba(240, 245, 252, 0.93),
       rgba(223, 245, 255, 0.93)
