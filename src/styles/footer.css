@@ -1,16 +1,8 @@
 .footer {
   border-radius: 2rem 2rem 0 0;
-  box-shadow:
-    0px 5px 25px #b3baca,
-    -5px 0px 25px #f3fcff;
-  background-image: linear-gradient(
-      rgba(240, 245, 252, 0.93),
-      rgba(223, 245, 255, 0.93)
-    ),
-    url('../assets/images/resurs.webp');
-  background-size:
-    auto,
-    350px auto;
+  box-shadow: var(--main-box-shadow);
+  background-image: var(--main-bg-image);
+  background-size: var(--main-bg-size);
 }
 
 @media only screen and (max-width: 576px) {

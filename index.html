@@ -32,12 +32,7 @@
         </div>
         <section class="header__hero">
           <div class="hero__layers">
-            <div
-              class="layers__item layer-1"
-              style="
-                background-image: url('./src/assets/images/layers/layer-1.jpg');
-              "
-            ></div>
+            <div class="layers__item layer-1"></div>
             <div
               class="layers__item layer-2"
               style="
@@ -77,20 +72,22 @@
             ></div>
           </div>
           <nav class="header__nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a href="#services" class="nav__link">Услуги</a>
-              </li>
-              <li class="nav__item">
-                <a href="#about" class="nav__link">О компании</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contacts" class="nav__link">Контакты</a>
-              </li>
-            </ul>
+            <div class="nav__wrap">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#services" class="nav__link">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </section>
       </header>
@@ -237,7 +234,7 @@
             <div class="about__info">
               <div class="about__item">
                 <h4 class="about__heading">Профессионализм и опыт</h4>
-                <p class="about__text" class="about__text">
+                <p class="about__text">
                   Наша компания обладает значительным опытом в области
                   регистрации и сопровождения бизнеса, что позволяет нам
                   предоставлять высококачественные услуги нашим клиентам
@@ -284,8 +281,6 @@
           <div class="contacts__content">
             <div class="contacts__map">
               <script
-                type="text/javascript"
-                charset="utf-8"
                 async
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A400afdaf9aa20b2948e20a2d74a8a5deae9d534250c44ae150715c87143c3cb5&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
               ></script>
