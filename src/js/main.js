@@ -6,3 +6,7 @@ import animationHero from './animationHero';
 
 useMenu();
 animationHero();
+
+const year = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+year.innerHTML = currentYear;
