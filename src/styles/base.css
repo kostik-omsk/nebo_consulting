@@ -23,8 +23,12 @@
   background-color: #21b1fe;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  min-height: 200vh;
+  min-height: 100vh;
   min-width: 320px;
   font-family: 'PTSans-Regular', 'PTSans', sans-serif;
   font-size: 18px;

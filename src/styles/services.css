@@ -25,6 +25,7 @@
   box-shadow:
     0px 5px 25px #b3baca,
     -5px 0px 25px #f3fcff;
+  transition: box-shadow 0.5s ease;
 }
 
 .service__info {
@@ -40,6 +41,11 @@
     background-color 0.5s ease;
 }
 
+.service:hover {
+  box-shadow:
+    -5px 0px 25px #f3fcff,
+    0px 5px 25px #b3baca;
+}
 .service:hover .service__info {
   transform: translateY(0);
   background-color: white;
