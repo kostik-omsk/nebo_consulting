@@ -14,7 +14,7 @@ Website for a consulting company.
 - **[postcss-nesting](https://www.npmjs.com/package/postcss-nesting):** A PostCSS plugin that allows you to use modern CSS Nesting in your stylesheets.
 - **[vite-plugin-eslint](https://www.npmjs.com/package/vite-plugin-eslint):** Integrates ESLint into the Vite build process for on-the-fly linting.
 - **[the-new-css-reset](https://elad2412.github.io/the-new-css-reset/):** A modern, CSS reset for your styles.
-- **[gsap](https://gsap.com/):**JavaScript animation library.
+-  **[gsap](https://elad2412.github.io/the-new-css-reset/):** JavaScript animation library.
 
 ## Scripts
 
