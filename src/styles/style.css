@@ -3,9 +3,6 @@
 @import './base.css';
 @import './header.css';
 @import './services.css';
-@import './about.css'; /* @import './main.css';
-@import './footer.css'; */
-
-/*
-@import './components.css';
-@import './animations.css'; */
+@import './about.css';
+@import './contacts.css';
+/* @import './footer.css'; */
