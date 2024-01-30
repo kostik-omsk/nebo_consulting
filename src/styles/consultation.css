@@ -45,6 +45,14 @@
   color: rgb(100, 100, 100);
 }
 
+.form__group :is(select:focus, select:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ebedf4;
+}
+
 .form__group :is(input:focus, input:valid) ~ label {
   transform: translateY(-50%) scale(0.9);
   margin: 0em;
@@ -65,7 +73,6 @@
   background-color: transparent;
   border-radius: 20px;
   width: 100%;
-
   cursor: pointer;
 }
 
