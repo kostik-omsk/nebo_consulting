@@ -225,6 +225,81 @@
             </div>
           </div>
         </section>
+        <section class="consultation" id="consultation">
+          <div class="consultation__header section-header">
+            <span class="consultation__pretitle pretitle">Получить</span>
+            <h2 class="consultation__title">Конслультацию</h2>
+          </div>
+          <div class="consultation__content">
+            <form class="form" id="form">
+              <div class="form__fields">
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    id="name"
+                    name="name"
+                    type="text"
+                    maxlength="25"
+                    required
+                  />
+                  <label class="form__label" for="name">Имя*</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                  /><label class="form__label" for="phone">Телефон*</label>
+                </div>
+                <div class="form__group">
+                  <select class="form-select" name="theme" required>
+                    <option selected>Выбрать тему</option>
+                    <option value="Регистрация: ООО, ИП, КФХ">
+                      Регистрация: ООО, ИП, КФХ
+                    </option>
+                    <option value="Покупка-продажа готовых фирм">
+                      Покупка-продажа готовых фирм
+                    </option>
+                    <option value="Продажа юридических адресов">
+                      Продажа юридических адресов
+                    </option>
+                    <option value="Изменения в госреестре">
+                      Изменения в госреестре
+                    </option>
+                    <option value="Ликвидация ООО / ИП">
+                      Ликвидация ООО / ИП
+                    </option>
+                    <option value="Налоговые декларации 3-НДФЛ">
+                      Налоговые декларации 3-НДФЛ
+                    </option>
+                    <option value="Открытие расчетных счетов">
+                      Открытие расчетных счетов
+                    </option>
+                    <option value="Другое">Другое</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__checkbox">
+                <label class="checkbox-container">
+                  <input
+                    class="custom-checkbox"
+                    id="checkbox"
+                    type="checkbox"
+                  />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-text"
+                    >Согласие на обработку персональных данных в соответствии с
+                    Федеральным законом от 27.07.2006 года №152-ФЗ.*</span
+                  >
+                </label>
+              </div>
+              <button type="submit" class="form__btn">Отправить</button>
+              <div class="form__message"></div>
+            </form>
+          </div>
+        </section>
         <section class="about" id="about">
           <div class="about__header section-header">
             <span class="about__pretitle pretitle">несколько слов</span>
