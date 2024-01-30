@@ -89,6 +89,10 @@ h3 {
   color: var(--main-primary);
 }
 
+.section-header h2 {
+  margin-bottom: 2rem;
+}
+
 @media only screen and (max-width: 576px) {
   .section-header {
     margin-left: 1rem;

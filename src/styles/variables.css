@@ -4,9 +4,9 @@
   --main-text: #6f7780;
   --main-text-dark: #1a3653;
   --main-primary: #21b1fe;
-  --main-secondary: #21b1fe;
   --main-white: #e4eeff;
   --main-danger: #ae1e23;
+  --main-success: #2aae1e;
   /* gradient */
   --main-gradient: linear-gradient(180deg, #21b1fe 30.95%, #22a9fa 100.42%);
   --main-gradient-grid: linear-gradient(
