@@ -188,6 +188,13 @@
   -webkit-text-stroke: 0;
 }
 
+.layers__btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
 @media only screen and (max-width: 576px) {
   .layers__content {
     max-width: 310px;
@@ -219,7 +226,6 @@
   transform: translateZ(100px) scale(1);
 }
 .layer-4 {
-  pointer-events: none;
   transform: translateZ(150px);
 }
 .layer-5 {
@@ -230,4 +236,10 @@
 }
 .layer-7 {
   transform: translateZ(350px) scale(0.65);
+}
+
+.layer-5,
+.layer-6,
+.layer-7 {
+  pointer-events: none;
 }

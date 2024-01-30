@@ -98,11 +98,47 @@ h3 {
     margin-left: 1rem;
   }
 }
+
 .no-scroll {
   overflow: hidden;
 }
+
 @media only screen and (min-width: 768px) {
   .no-scroll {
     margin-right: calc(7px - (100vw - 100%));
+  }
+}
+
+.btn {
+  position: relative;
+  border: none;
+  color: #fff;
+  background-image: var(--main-gradient);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
   }
 }

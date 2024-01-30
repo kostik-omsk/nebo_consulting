@@ -156,26 +156,6 @@
   color: var(--main-text);
 }
 
-.form__btn {
-  position: relative;
-  border: none;
-  color: #fff;
-  background-image: var(--main-gradient);
-  border-radius: 20px;
-  background-size: 100% auto;
-  font-family: inherit;
-  font-size: 17px;
-  padding: 0.6em 1.5em;
-  cursor: pointer;
-}
-
-.form__btn:hover {
-  background-position: right center;
-  background-size: 200% auto;
-  -webkit-animation: pulse 2s infinite;
-  animation: pulse512 1.5s infinite;
-}
-
 .form__btn:disabled {
   cursor: not-allowed;
   background-image: none;
@@ -188,20 +168,6 @@
   -webkit-animation: none;
   animation: none;
   cursor: not-allowed;
-}
-
-@keyframes pulse512 {
-  0% {
-    box-shadow: 0 0 0 0 #05bada66;
-  }
-
-  70% {
-    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
-  }
 }
 
 .form__message {
