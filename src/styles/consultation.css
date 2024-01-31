@@ -172,7 +172,7 @@
 
 .form__message {
   width: fit-content;
-  padding: 1rem 1.5rem;
+
   border-radius: 0.37rem;
   transform: scaleY(0);
   transition: all 0.3s ease;
@@ -190,6 +190,7 @@
 }
 
 .form__message--active {
+  padding: 1rem 1.5rem;
   margin-top: 1.5rem;
   transform: scaleY(1);
 }
