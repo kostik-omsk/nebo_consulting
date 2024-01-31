@@ -95,7 +95,6 @@ export default function useAnimation() {
     scrollTrigger: {
       trigger: '.contacts',
       start: '40% bottom',
-      markers: true,
     },
   });
 }
