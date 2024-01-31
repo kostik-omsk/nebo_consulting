@@ -8,31 +8,31 @@ export default function animationHero() {
 
   const tl = gsap.timeline({ ease: 'power2.out' });
 
-  tl.from('.layer-3', {
-    y: 150,
-    opacity: 0,
-    duration: 1.3,
-  });
+  // tl.from('.layer-3', {
+  //   y: 150,
+  //   opacity: 0,
+  //   duration: 1.3,
+  // });
 
-  tl.from(
-    '.layer-5',
-    {
-      y: 150,
-      opacity: 0,
-      duration: 1.3,
-    },
-    '<50%',
-  );
+  // tl.from(
+  //   '.layer-5',
+  //   {
+  //     y: 150,
+  //     opacity: 0,
+  //     duration: 1.3,
+  //   },
+  //   '<30%',
+  // );
 
-  tl.from(
-    '.layer-6',
-    {
-      y: 150,
-      opacity: 0,
-      duration: 1.3,
-    },
-    '<50%',
-  );
+  // tl.from(
+  //   '.layer-6',
+  //   {
+  //     y: 150,
+  //     opacity: 0,
+  //     duration: 1.3,
+  //   },
+  //   '<30%',
+  // );
 
   tl.from(
     '.layer-4',
@@ -41,7 +41,7 @@ export default function animationHero() {
       opacity: 0,
       duration: 1.8,
     },
-    '<50%',
+    '<30%',
   );
 
   tl.from(
