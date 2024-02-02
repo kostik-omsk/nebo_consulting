@@ -21,9 +21,6 @@
 }
 
 .service__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 1rem;
   transform: translateY(230px);
   border-radius: 1rem;
@@ -51,13 +48,13 @@
 }
 
 .service__text {
+  opacity: 0;
   color: var(--main-text);
   margin-bottom: 1rem;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
 }
-
-.service__link {
-  color: var(--main-primary);
+.service:hover .service__text {
+  opacity: 1;
 }
 
 .service__img {

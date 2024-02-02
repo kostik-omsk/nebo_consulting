@@ -1,6 +1,6 @@
 :root {
   /* color */
-  --main-background: #d9deeb85;
+  --main-background: #f0f0f0;
   --main-text: #6f7780;
   --main-text-dark: #1a3653;
   --main-primary: #21b1fe;
@@ -15,10 +15,7 @@
     rgba(255, 255, 255, 0.1) 33%
   );
   /* bg */
-  --main-bg-image: linear-gradient(
-      rgba(240, 245, 252, 0.93),
-      rgba(223, 245, 255, 0.93)
-    ),
+  --main-bg-image: linear-gradient(rgba(240, 245, 252, 0.93), rgba(223, 245, 255, 0.93)),
     url('../assets/images/resurs.webp');
   --main-bg-size: auto, 350px auto;
   /* shadow */
