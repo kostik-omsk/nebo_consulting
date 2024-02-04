@@ -51,10 +51,7 @@ export default function useForm() {
   }
 
   function createAlertMessage(value, text) {
-    if (
-      message.classList.contains('success') ||
-      message.classList.contains('error')
-    ) {
+    if (message.classList.contains('success') || message.classList.contains('error')) {
       message.classList.remove('success');
       message.classList.remove('error');
       message.innerHTML = '';
@@ -107,10 +104,7 @@ export default function useForm() {
         });
 
         if (response.ok) {
-          createAlertMessage(
-            'success',
-            'Спасибо за заявку! Мы свяжемся с вами в ближайшее время.',
-          );
+          createAlertMessage('success', 'Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
         } else {
           createAlertMessage('error', 'Произошла ошибка при отправке данных');
         }
@@ -127,10 +121,7 @@ export default function useForm() {
         }, 5000);
       }
     } else if (!checkbox.checked) {
-      createAlertMessage(
-        'error',
-        'Примите согласие на обработку персональных данных',
-      );
+      createAlertMessage('error', 'Примите согласие на обработку персональных данных');
     } else if (!isValidPhone) {
       createAlertMessage('error', 'Некорректный номер телефона');
     } else {

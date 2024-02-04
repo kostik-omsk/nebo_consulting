@@ -50,7 +50,7 @@
   margin: 0em;
   margin-left: 1.3em;
   padding: 0.4em;
-  background-color: #ebedf4;
+  background-color: var(--main-background);
 }
 
 .form__group :is(input:focus, input:valid) ~ label {
@@ -58,7 +58,7 @@
   margin: 0em;
   margin-left: 1.3em;
   padding: 0.4em;
-  background-color: #ebedf4;
+  background-color: var(--main-background);
 }
 
 .form__group :is(input:focus, ) {
