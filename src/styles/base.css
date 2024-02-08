@@ -34,6 +34,7 @@ body {
   font-size: 18px;
   color: var(--main-text-dark);
   background-color: var(--main-background);
+  overflow-x: hidden;
 }
 
 h2,
@@ -84,6 +85,7 @@ h3 {
 
 .section-header .pretitle {
   color: var(--main-primary);
+  font-size: var(--font-size-md);
 }
 
 .section-header h2 {
@@ -104,6 +106,15 @@ h3 {
   .no-scroll {
     margin-right: calc(7px - (100vw - 100%));
   }
+}
+
+.bg-section {
+  overflow: hidden;
+  background-image: var(--main-bg-image);
+  background-size: var(--main-bg-size);
+  border-radius: 2rem;
+  padding: 2rem 0;
+  box-shadow: var(--main-box-shadow);
 }
 
 .btn {

@@ -1,12 +1,3 @@
-.about {
-  overflow: hidden;
-  background-image: var(--main-bg-image);
-  background-size: var(--main-bg-size);
-  border-radius: 2rem;
-  padding: 2rem 0;
-  box-shadow: var(--main-box-shadow);
-}
-
 .about__content {
   display: flex;
   justify-content: space-between;

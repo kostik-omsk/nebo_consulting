@@ -10,7 +10,7 @@ export default function useAnimation() {
       trigger: '.header',
       start: '100 top',
       end: 'bottom top',
-      scrub: true,
+      scrub: 1,
     },
   });
 
@@ -21,7 +21,7 @@ export default function useAnimation() {
       trigger: '.header',
       start: '100 top',
       end: 'bottom top',
-      scrub: true,
+      scrub: 1,
     },
   });
 
@@ -33,40 +33,60 @@ export default function useAnimation() {
       trigger: '.header',
       start: '100 top',
       end: '125% top',
-      scrub: true,
+      scrub: 1,
     },
   });
 
   // Services
   gsap.from('.services__item', {
-    opacity: 0,
+    autoAlpha: 0,
     y: 100,
     stagger: 0.4,
     scrollTrigger: {
       trigger: '.services__content',
-      start: '150 bottom',
+      start: 'top 80%',
+      end: 'bottom bottom',
+      scrub: 2,
+    },
+  });
+
+  // process
+
+  gsap.from('.process__item', {
+    autoAlpha: 0,
+    x: 100,
+    stagger: 0.4,
+    scrollTrigger: {
+      trigger: '.process__content',
+      start: 'top 80%',
+      end: 'bottom bottom',
+      scrub: 1,
     },
   });
 
   // consultation
-  gsap.from('.consultation', {
-    opacity: 0,
-    y: 100,
+  const tlConsultation = gsap.timeline({
     scrollTrigger: {
       trigger: '.consultation',
-      start: '150 bottom',
+      start: 'top 90%',
+      // toggleActions: 'play none none reset',
     },
   });
+  tlConsultation
+    .from('.form__group', {
+      opacity: 0,
+      x: 200,
+      stagger: 0.4,
+    })
+    .from('.form__checkbox', {
+      opacity: 0,
+      x: 200,
+    })
+    .from('.form__btn', {
+      scaleY: 0,
+    });
 
   // about us
-  gsap.from('.about', {
-    opacity: 0,
-    duration: 1.3,
-    scrollTrigger: {
-      trigger: '.about',
-      start: '150 bottom',
-    },
-  });
 
   gsap.from('.about__item', {
     opacity: 0,
@@ -75,18 +95,11 @@ export default function useAnimation() {
     scrollTrigger: {
       trigger: '.about',
       start: '30% bottom',
+      // toggleActions: 'play none none reset',
     },
   });
 
   // contacts
-  gsap.from('.contacts__header', {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-      trigger: '.contacts',
-      start: '25% bottom',
-    },
-  });
 
   gsap.from('.contacts__item', {
     opacity: 0,
@@ -95,6 +108,7 @@ export default function useAnimation() {
     scrollTrigger: {
       trigger: '.contacts',
       start: '40% bottom',
+      // toggleActions: 'play none none reset',
     },
   });
 }
