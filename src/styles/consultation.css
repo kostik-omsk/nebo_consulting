@@ -17,6 +17,7 @@
 .form__group {
   flex: 0 1 33%;
   position: relative;
+  will-change: transform;
 }
 
 .form__input {
@@ -61,7 +62,7 @@
   background-color: var(--main-background);
 }
 
-.form__group :is(input:focus, ) {
+.form__group :is(input:focus) {
   border-color: var(--main-primary);
 }
 
@@ -82,6 +83,7 @@
 
 .form__checkbox {
   margin-bottom: 1.5rem;
+  will-change: transform;
 }
 
 .checkbox-container {
@@ -154,6 +156,10 @@
   margin-left: 0.8rem;
   margin-bottom: 1rem;
   color: var(--main-text);
+}
+
+.form__btn {
+  will-change: transform;
 }
 
 .form__btn:disabled {

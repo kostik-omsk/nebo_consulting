@@ -23,6 +23,7 @@
 
 .contacts__item {
   margin-bottom: 2rem;
+  will-change: transform;
 }
 
 .contacts__item span {

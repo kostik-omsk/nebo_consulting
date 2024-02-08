@@ -30,6 +30,10 @@
   max-width: 700px;
 }
 
+.process__item {
+  will-change: transform;
+}
+
 .card {
   background-image: var(--main-gradient-grid);
   border-left: 2px solid var(--main-primary);

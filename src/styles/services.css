@@ -20,6 +20,10 @@
   transition: box-shadow 0.5s ease;
 }
 
+.services__item {
+  will-change: transform;
+}
+
 .service__info {
   padding: 1rem;
   transform: translateY(230px);
