@@ -54,6 +54,7 @@
   margin-bottom: 0.5rem;
   font-size: var(--font-size-md);
 }
+
 .about__item .about__text {
   color: var(--main-text);
   margin-bottom: 1rem;
