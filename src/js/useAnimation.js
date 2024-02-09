@@ -90,7 +90,6 @@ export default function useAnimation() {
       trigger: '.consultation ',
       start: '100 90%',
       toggleActions: 'play none none reset',
-      markers: true,
     },
   });
 
