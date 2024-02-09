@@ -10,6 +10,7 @@
     grid-column: full-width !important;
   }
 }
+
 .footer__content {
   position: relative;
   display: flex;
@@ -21,6 +22,7 @@
 .footer__logo {
   width: 100px;
 }
+
 @media only screen and (max-width: 576px) {
   .footer__logo {
     width: 80px;
@@ -41,6 +43,7 @@
     right: 2rem;
     top: -10px;
   }
+
   .footer__copyright {
     position: relative;
     left: 0;
@@ -58,6 +61,7 @@
   font-weight: 600;
   transition: all 0.3s;
 }
+
 .footer__btn:hover {
   background: #21b1fe;
   color: var(--main-white);

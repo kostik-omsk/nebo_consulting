@@ -108,6 +108,7 @@ export default function useForm() {
         } else {
           createAlertMessage('error', 'Произошла ошибка при отправке данных');
         }
+
         btnSubmit.innerHTML = 'Отправить';
       } catch (error) {
         console.error(error);

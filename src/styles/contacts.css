@@ -38,6 +38,7 @@
 .contacts__heading {
   margin-bottom: 0.5rem;
 }
+
 .contacts__link {
   font-size: var(--font-size-xl);
   color: var(--main-primary);

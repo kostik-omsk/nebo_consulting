@@ -13,6 +13,7 @@
   height: 7px;
   width: 7px;
 }
+
 *::-webkit-scrollbar-track {
   border-radius: 4px;
   background-color: #919191;
@@ -47,9 +48,11 @@ h2 {
   font-size: var(--font-size-xxl);
   text-transform: uppercase;
 }
+
 h3 {
   font-size: var(--font-size-md);
 }
+
 .content-grid {
   --padding-inlain: clamp(0.6rem, 3%, 1rem);
   --content-max-width: 1390px;
@@ -63,6 +66,7 @@ h3 {
 
   overflow-x: hidden;
 }
+
 .content-grid > :not(.full-width),
 .full-width > :not(.full-width) {
   grid-column: content;

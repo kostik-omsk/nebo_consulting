@@ -97,7 +97,7 @@ export default function useAnimation() {
     .from('.form__group', {
       autoAlpha: 0,
       x: 200,
-      stagger: 0.4,
+      stagger: 0.3,
     })
     .from('.form__checkbox', {
       autoAlpha: 0,

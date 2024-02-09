@@ -9,7 +9,6 @@ import useAnimation from './useAnimation';
 const mm = gsap.matchMedia();
 
 mm.add('(min-width: 768px)', () => {
-  // desktop setup code here...
   animationHero();
 });
 useAnimation();
