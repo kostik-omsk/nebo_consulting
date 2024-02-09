@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  base: '/dist/',
+  base: './',
   plugins: [
     eslint({
       cache: false,
