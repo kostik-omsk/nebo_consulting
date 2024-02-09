@@ -34,7 +34,6 @@ body {
   font-size: 18px;
   color: var(--main-text-dark);
   background-color: var(--main-background);
-  overflow-x: hidden;
 }
 
 h2,
@@ -61,6 +60,8 @@ h3 {
     [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width))
     [content-end]
     minmax(var(--padding-inlain), 1fr) [full-width-end];
+
+  overflow-x: hidden;
 }
 .content-grid > :not(.full-width),
 .full-width > :not(.full-width) {

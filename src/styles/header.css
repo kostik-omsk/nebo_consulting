@@ -165,9 +165,14 @@
 .hero__layers {
   transform-style: preserve-3d;
   height: 100%;
-  transform: rotateX(var(--mouse-y)) rotateY(var(--mouse-x));
-  transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
-  will-change: transform;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__layers {
+    transform: rotateX(var(--mouse-y)) rotateY(var(--mouse-x));
+    transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+    will-change: transform;
+  }
 }
 
 .layers__item {
@@ -234,6 +239,7 @@
 }
 .layer-4 {
   transform: translateZ(150px);
+  will-change: transform;
 }
 .layer-5 {
   transform: translateZ(200px) scale(0.8);
@@ -243,6 +249,7 @@
 }
 .layer-7 {
   transform: translateZ(350px) scale(0.65);
+  will-change: transform;
 }
 
 .layer-5,
