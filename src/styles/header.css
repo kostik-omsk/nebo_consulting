@@ -90,6 +90,7 @@
   background: var(--main-white);
   transition: all 0.5s ease;
   z-index: -1;
+  will-change: opacity;
 }
 
 .nav__wrap {
@@ -248,7 +249,6 @@
 .layer-4 {
   transform: translateZ(150px);
   -webkit-transform: translateZ(150px);
-  will-change: transform;
 }
 
 .layer-5 {
@@ -264,11 +264,17 @@
 .layer-7 {
   transform: translateZ(350px) scale(0.65);
   -webkit-transform: translateZ(350px) scale(0.65);
-  will-change: transform;
 }
 
 .layer-5,
 .layer-6,
 .layer-7 {
   pointer-events: none;
+}
+.layer-2,
+.layer-3,
+.layer-4,
+.layer-5,
+.layer-6 {
+  will-change: transform, opacity;
 }
