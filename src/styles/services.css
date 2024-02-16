@@ -63,6 +63,12 @@
   opacity: 1;
 }
 
+.service__link {
+  color: var(--main-primary);
+  position: absolute;
+  bottom: 1rem;
+}
+
 .service__img {
   position: absolute;
   width: 100%;
